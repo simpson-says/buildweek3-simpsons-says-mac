@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Dokdo', cursive;
+}
+button {
+  font-family: 'Dokdo', cursive;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Permanent Marker', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: black;
+  border: 10px solid red;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px dashed black;
+  background: yellow;
+  margin-bottom: 10px;
+}
+header nav .logo {
+  width: 165px;
+  height: 155px;
+}
+header nav a {
+  border: 5px solid black;
+  border-radius: 10%;
+  background: yellow;
+  padding: 10px;
+  margin: 0 20px 0 20px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+header nav a:hover {
+  color: yellow;
+  background: black;
+}
+header nav .login {
+  border: 5px solid black;
+  border-radius: 10%;
+  background: yellow;
+  padding: 10px;
+  margin: 0 20px 0 20px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+header nav .login:hover {
+  color: yellow;
+  background: black;
+}
+.main {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  background: yellow;
+}
+.cta {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+}
+.input .search {
+  width: 75%;
+  border: 5px solid blue;
+}
+.output {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+}
+.output .quote-header {
+  margin-top: 20px;
+  width: 75%;
+  font-size: 2rem;
+  border: 1px solid blue;
+}
+.output .quote-container {
+  font-size: 2rem;
+  margin-top: 20px;
+  width: 75%;
+  border: 1px solid blue;
+}
