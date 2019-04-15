@@ -3,42 +3,143 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // border: 1px solid red;
         border-bottom: 2px dashed black;
-        background: yellow;
-        margin-bottom: 10px;
+        background: #ffd700;
         .logo {
-            width: 165px;
-            height: 155px;
+            width: 200px;
+            height: 150px;
+            background: black;
+            border-radius: 15%;
+            margin: 10px 0 10px 10px;
         }
         a {
             border: 5px solid black;
             border-radius: 10%;
-            background: yellow;
+            background: #ffd700;
             padding: 10px;
             margin: 0 20px 0 20px;
             text-decoration: none;
             font-size: 2rem;
-            color: black;
+            color: #000000;
         }
         a:hover{
-            color: yellow;
-            background:black;
+            color: #000000;
+            background:#ffffff;
+            border: 5px solid #abdcf1;
         }
         .login {
             border: 5px solid black;
             border-radius: 10%;
-            background: yellow;
+            background: #ffd700;
             padding: 10px;
             margin: 0 20px 0 20px;
             text-decoration: none;
             font-size: 2rem;
             color: black;
+            cursor: pointer;
         }
         .login:hover {
-            color: yellow;
-            background:black;
+            color: black;
+            background: white;
+            border: 5px solid #abdcf1;
         }
     }
 }
-    
+@media @tablet {
+    header{
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px dashed black;
+            background: red;
+            .logo {
+                width: 200px;
+                height: 150px;
+                background: black;
+                border-radius: 15%;
+                margin: 10px 0 10px 10px;
+            }
+            a {
+                border: 5px solid black;
+                border-radius: 10%;
+                background: #ffd700;
+                padding: 10px;
+                margin: 0 20px 0 20px;
+                text-decoration: none;
+                font-size: 2rem;
+                color: #000000;
+            }
+            a:hover{
+                color: #000000;
+                background:#ffffff;
+                border: 5px solid #abdcf1;
+            }
+            .login {
+                border: 5px solid black;
+                border-radius: 10%;
+                background: #ffd700;
+                padding: 10px;
+                margin: 0 20px 0 20px;
+                text-decoration: none;
+                font-size: 2rem;
+                color: black;
+                cursor: pointer;
+            }
+            .login:hover {
+                color: black;
+                background: white;
+                border: 5px solid #abdcf1;
+            }
+        }
+    }
+}
+@media @mobile {
+    header{
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px dashed black;
+            background: blue;
+            .logo {
+                width: 200px;
+                height: 150px;
+                background: black;
+                border-radius: 15%;
+                margin: 10px 0 10px 10px;
+            }
+            a {
+                border: 5px solid black;
+                border-radius: 10%;
+                background: #ffd700;
+                padding: 10px;
+                margin: 0 20px 0 20px;
+                text-decoration: none;
+                font-size: 2rem;
+                color: #000000;
+            }
+            a:hover{
+                color: #000000;
+                background:#ffffff;
+                border: 5px solid #abdcf1;
+            }
+            .login {
+                border: 5px solid black;
+                border-radius: 10%;
+                background: #ffd700;
+                padding: 10px;
+                margin: 0 20px 0 20px;
+                text-decoration: none;
+                font-size: 2rem;
+                color: black;
+                cursor: pointer;
+            }
+            .login:hover {
+                color: black;
+                background: white;
+                border: 5px solid #abdcf1;
+            }
+        }
+    }
+}
