@@ -11,6 +11,7 @@
         border-radius: 10%;
     }
     .cta {
+    border-top: 2px dashed black;
     padding: 20px 0 20px 0;
     background: #abdcf1;
     display: flex;
@@ -48,7 +49,6 @@
             background: #ffffff;
         }
     }
-
     }
     .content-header{
         font-size: 5rem;
@@ -56,9 +56,6 @@
         justify-content: center;
         align-items: center;
         margin-top: 10px;
-       
-    }
-    .offset-header{
         -webkit-text-fill-color: #ffd700;
         -webkit-text-stroke: 1px #000000;
     }
@@ -81,6 +78,8 @@
         flex-flow: column wrap;
         padding: 50px;
             h3 {
+                -webkit-text-fill-color: #ffd700;
+                -webkit-text-stroke: 1px #000000;
                 margin-bottom: 5px;
                 font-size: 2rem;
             }
@@ -88,18 +87,28 @@
                 font-size: 1.5rem;
             }
         }
+        .quote1, .quote2{
+            width: 50%;
+            display: flex;
+            flex-flow: column wrap;
+            padding: 50px;
+                h3 {
+                    -webkit-text-fill-color: #ffd700;
+                    -webkit-text-stroke: 1px #000000;
+                    margin-bottom: 5px;
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                }
+            }
     }
-    .offset-content {
+    .offset{
         background: #abdcf1;
-        h3 {
-        -webkit-text-fill-color: #ffd700;
-        -webkit-text-stroke: 1px #000000;
-        }
     }
 }
-
-// Mobile stylings begin here!
-@media @mobile {
+// Tablet stylings begin here!
+@media @tablet {
     .container {
         width: 100%;
         height: 100%;
@@ -150,20 +159,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            text-align: center;
             margin-top: 10px;
-           
-        }
-        .offset-header{
             -webkit-text-fill-color: #ffd700;
             -webkit-text-stroke: 1px #000000;
         }
         .content {
         width: 100%;
         border-top: 2px dashed #000000;
-            h3 {
-            -webkit-text-fill-color: #ffd700;
-            -webkit-text-stroke: 1px #000000;
-            }
+
         .content-container {
             width: 100%;
             padding: 20px;
@@ -171,6 +175,132 @@
             justify-content: center;
         }
             .blurb{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            padding: 50px;
+                h3 {
+                    -webkit-text-fill-color: #ffd700;
+                    -webkit-text-stroke: 1px #000000;
+                    margin-bottom: 5px;
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+            .quote1{
+                width: 100%;
+                display: flex;
+                flex-flow: column wrap;
+                padding: 50px;
+                    h3 {
+                        -webkit-text-fill-color: #ffd700;
+                        -webkit-text-stroke: 1px #000000;
+                        margin-bottom: 5px;
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+            .quote2{
+            display: none;
+            }
+        }
+        .offset {
+            background: #abdcf1;
+        }
+        #tablethidden {
+            display: none;
+        }
+    }
+}
+// Mobile stylings begin here!
+@media @mobile {
+    .container {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        background: white;
+        .phimg{
+           display: none;
+        }
+        .cta {
+        background: #abdcf1;
+        display: flex;
+        justify-content: space-between;
+        border-top: none;
+        .cta-container{
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            h1, h4 {
+            -webkit-text-fill-color: #ffd700;
+            -webkit-text-stroke: 1px #000000;
+            }
+            h1 {
+            margin-bottom: 100px; 
+            }
+            button {
+            margin-top: 100px;
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 5px solid #000000;
+            border-radius: 10%;
+            background: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 3rem;
+            color: #000000;
+            cursor: pointer;
+            }
+            button:hover {
+                color: #abdcf1;
+                background: #ffffff;
+            }
+        }
+        }
+        .content-header{
+            font-size: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 10px;
+            -webkit-text-fill-color: #ffd700;
+            -webkit-text-stroke: 1px #000000;
+        }
+        .content {
+        width: 100%;
+        border-top: 2px dashed #000000;
+
+        .content-container {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+            .blurb{
+                width: 100%;
+                display: flex;
+                flex-flow: column wrap;
+                padding: 50px;
+                    h3 {
+                        margin-bottom: 5px;
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 1.5rem;
+                    }
+            }
+            .quote1{
+            display: none;
+            }
+            .quote2{
             width: 100%;
             display: flex;
             flex-flow: column wrap;
@@ -184,12 +314,11 @@
                 }
             }
         }
-        .offset-content {
+        .offset {
             background: #abdcf1;
-            h3 {
-            -webkit-text-fill-color: #ffd700;
-            -webkit-text-stroke: 1px #000000;
-            }
+        }
+        #mobilehidden {
+            display: none;
         }
     }
 }
