@@ -2,13 +2,13 @@ header{
     background-image: url("../assets/SIMPSONS_banner.jpg");
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px dashed black;
     .logo {
-        width: 200px;
+        width: 500px;
+        padding: 10px;
         height: 150px;
-        background: black;
         border-radius: 15%;
         margin: 10px 0 10px 100px;
+        background: white;
     }
     nav{
         display: flex;
@@ -47,101 +47,62 @@ header{
         }
     }
 }
-@media @tablet {
-    header{
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px dashed black;
-            background: red;
-            .logo {
-                width: 200px;
-                height: 150px;
-                background: black;
-                border-radius: 15%;
-                margin: 10px 0 10px 10px;
-            }
-            a {
-                border: 5px solid black;
-                border-radius: 10%;
-                background: #ffd700;
-                padding: 10px;
-                margin: 0 20px 0 20px;
-                text-decoration: none;
-                font-size: 2rem;
-                color: #000000;
-            }
-            a:hover{
-                color: #000000;
-                background:#ffffff;
-                border: 5px solid #abdcf1;
-            }
-            .login {
-                border: 5px solid black;
-                border-radius: 10%;
-                background: #ffd700;
-                padding: 10px;
-                margin: 0 20px 0 20px;
-                text-decoration: none;
-                font-size: 2rem;
-                color: black;
-                cursor: pointer;
-            }
-            .login:hover {
-                color: black;
-                background: white;
-                border: 5px solid #abdcf1;
-            }
+// Mobile stylings begin here!
+@media @mobile {
+header {
+    background-image: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    .logo {
+        width: 300px;
+        padding: 10px;
+        height: 150px;
+        border-radius: 15%;
+        background: white;
+        margin-right: 100px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            width: 100%;
+            height: 25%;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            background: #ffd700;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 4rem;
+            color: #000000;
+        }
+        a:hover{
+            color: #abcdf1;
+            background:#ffffff;
+            border-top: 2px solid #abdcf1;
+            border-bottom: 2px solid #abdcf1;
+        }
+        .login {
+            width: 100%;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            background: #ffd700;
+            padding: 10px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 4rem;
+            color: black;
+            cursor: pointer;
+        }
+        .login:hover {
+            color: #abdcf1;
+            background: white;
+            border-top: 2px solid #abdcf1;
+            border-bottom: 2px solid #abdcf1;
         }
     }
-}
-@media @mobile {
-    header{
-        nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px dashed black;
-            background: blue;
-            .logo {
-                width: 200px;
-                height: 150px;
-                background: black;
-                border-radius: 15%;
-                margin: 10px 0 10px 10px;
-            }
-            a {
-                border: 5px solid black;
-                border-radius: 10%;
-                background: #ffd700;
-                padding: 10px;
-                margin: 0 20px 0 20px;
-                text-decoration: none;
-                font-size: 2rem;
-                color: #000000;
-            }
-            a:hover{
-                color: #000000;
-                background:#ffffff;
-                border: 5px solid #abdcf1;
-            }
-            .login {
-                border: 5px solid black;
-                border-radius: 10%;
-                background: #ffd700;
-                padding: 10px;
-                margin: 0 20px 0 20px;
-                text-decoration: none;
-                font-size: 2rem;
-                color: black;
-                cursor: pointer;
-            }
-            .login:hover {
-                color: black;
-                background: white;
-                border: 5px solid #abdcf1;
-            }
-        }
     }
 }
