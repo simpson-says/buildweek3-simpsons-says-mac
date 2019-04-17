@@ -5,6 +5,8 @@
         <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto" rel="stylesheet"> 
         <link rel="stortcut icon" href="./assets/simpsons_donut_icon.png">
+        <script src="js/Tabs.js" async></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -13,17 +15,77 @@
             <nav>
                 <a href="index.html">Main Page</a>
                 <a href="about.html">About Us</a>
-                <a href="#">Log In!</a>
+                <a href="https://simpsonssays.netlify.com/login">Log In!</a>
             </nav>
             </header>
             <section class="about">
                     <h1>Read about our AWESOME team!</h1><br>
-                    <h4>Select a postion and read a role!?</h4>
-                    <button>Data Scientists</button>
-                    <button>User Interface Developers</button>
-                    <button>Front End Developers</button>
-                    <button>Back End Developers</button>
+                    <h4>Select a postion and read about those team members!</h4>
+                    <div class="tab-select">
+                    <button class="tab active" data-tab="all">Everyone</button>
+                    <button class="tab" data-tab="PM">Project Managers</button>
+                    <button class="tab" data-tab="DS">Data Scientists</button>
+                    <button class="tab" data-tab="UI">UI Developers</button>
+                    <button class="tab" data-tab="AN">Android Developers</button>
+                    <button class="tab" data-tab="FE">Front End Developers</button>
+                    <button class="tab" data-tab="BE">Back End Developers</button>
+                    </div>
+            </section>
+            <section class="cast">
+            <div class="cardset">
+                <div class="card" data-tab="PM">
+                    <div class="phpro" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h1>Andrew McLaughlin</h1>
+                    <h4>Position: Project Manager</h4>
                 </div>
+                <div class="card" data-tab="DS">
+                    <div class="phpro" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h1>Daniel Martin-Alarcon</h1>
+                    <h4>Postion: Data Scientist</h4>
+                </div>
+                <div class="card" data-tab="DS">
+                    <div class="phpro" data-aos="fade-up" data-aos-duration="1000"></div>    
+                    <h1>Placeholder</h1>
+                    <h4>Postion: Data Scientist</h4>
+                </div>
+                <div class="card" data-tab="DS">
+                    <div class="phpro" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h1>Placeholder</h1>
+                    <h4>Postion: Data Scientist</h4>
+                </div>
+                <div class="card" data-tab="UI">
+                    <div class="phpro" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h1>Taslim Yakub</h1>
+                    <h4>Postion: User Interface Devloper</h4>
+                </div>
+            </div>
+            <div class="cardset">
+                <div class="card" data-tab="UI">
+                    <div class="phpro" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h1>Mack Weber</h1>
+                    <h4>Position: User Interface Developer</h4>
+                </div>
+                <div class="card" data-tab="AN">
+                    <div class="phpro" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h1>Basil Havens</h1>
+                    <h4>Position: Android Developer</h4>
+                </div>
+                <div class="card" data-tab="FE">
+                    <div class="phpro" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h1>John Gibbons</h1>
+                    <h4>Position: Front End Developer</h4>
+                </div>
+                <div class="card" data-tab="BE">
+                    <div class="phpro" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h1>Placeholder</h1>
+                    <h4>Position: Back End Developer</h4>
+                </div>
+                <div class="card" data-tab="BE">
+                    <div class="phpro" data-aos="fade-up" data-aos-duration="1000"></div>
+                    <h1>Placeholder</h1>
+                    <h4>Position: Back End Developer</h4>
+                </div>
+            </div>
             </section>
             <footer>
             <section class="contact">
@@ -37,5 +99,7 @@
             </section>
             </footer>
         </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     </body>
 </html>

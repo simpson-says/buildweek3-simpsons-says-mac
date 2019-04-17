@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
         <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto" rel="stylesheet">  
         <link rel="stortcut icon" href="./assets/simpsons_donut_icon.png">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -13,7 +14,7 @@
                 <nav>
                     <a href="index.html">Main Page</a>
                     <a href="about.html">About Us</a>
-                    <a href="#">Log In!</a>
+                    <a href="https://simpsonssays.netlify.com/login">Log In!</a>
                 </nav>
             </header>
             <section class="cta">
@@ -21,14 +22,14 @@
                     <h1>Sign up for FREE today!</h1><br>
                     <h4>Can't find the quote you're looking for?</h4>
                     <h4>Our database will do the hard work for you!</h4>
-                    <button>Sign Up!</button>
+                    <a href="https://simpsonssays.netlify.com/register"><button>Sign Up!</button></a>
                 </div>
-                <div class="phimg"></div>
+                <img src="assets/homer_running.jpg" class="phimg" data-aos="flip-left" data-aos-delay="100" data-aos-animation="1000"/>
             </section>
             <section class="content">
                 <h2 class="content-header offset-header">Product Features!</h2>
                 <div class="content-container">
-                    <div class="phimg"></div>
+                    <div class="phimg" data-aos="flip-right" data-aos-delay="100" data-aos-animation="1000"></div>
                     <div class="blurb">
                         <h3>Content</h3>
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero.
@@ -50,7 +51,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero."</p>
                     </div>
-                    <div class="phimg"></div>
+                    <div class="phimg" data-aos="flip-left" data-aos-delay="100" data-aos-animation="1000"></div>
                 </div>
             </section>
             <section class="content">
@@ -58,9 +59,9 @@
                     <div class="content-container">
                         <div class="quote1" id="mobilehidden">
                         <h3>Matt Groening</h3>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero."</p>
+                        <p>"As the creator of such a long-running series, I often have people asking me what my favorite quote is - 
+                            and often times I misquote my own show. Thanks to <i>Simpsons Says</i>, I can pull it up and give
+                            an answer."</p>
                         <h3>Loren Bouchard</h3>
                         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in condimentum nunc, a commodo libero.
@@ -94,5 +95,7 @@
             </section>
         </footer>
         </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     </body>
 </html>

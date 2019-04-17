@@ -181,6 +181,7 @@ header .logo {
   padding: 10px;
   height: 150px;
   border-radius: 15%;
+  border: 5px solid black;
   margin: 10px 0 10px 100px;
   background: white;
 }
@@ -638,10 +639,165 @@ header nav a:hover {
   }
 }
 .about {
+  border-top: 2px dashed black;
   background: #abdcf1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.about h1,
+.about h4 {
   -webkit-text-fill-color: #ffd700;
   -webkit-text-stroke: 1px #000000;
+}
+.about .tab-select {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.about .tab-select .tab {
+  border: 5px solid black;
+  border-radius: 10%;
+  background: #ffd700;
+  padding: 10px;
+  margin: 0 20px 0 20px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000000;
+}
+.about .tab-select .tab:hover {
+  color: #abcdf1;
+  background: #ffffff;
+  border: 5px solid #000000;
+}
+.cast {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px dashed black;
+}
+.cast .cardset {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cast .cardset .phpro {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 800px) {
+  .about {
+    border-top: 2px dashed black;
+    background: #abdcf1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .about h1,
+  .about h4 {
+    -webkit-text-fill-color: #ffd700;
+    -webkit-text-stroke: 1px #000000;
+  }
+  .about .tab-select {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .about .tab-select .tab {
+    border: 5px solid black;
+    border-radius: 10%;
+    background: #ffd700;
+    padding: 10px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000000;
+  }
+  .about .tab-select .tab:hover {
+    color: #abcdf1;
+    background: #ffffff;
+    border: 5px solid #000000;
+  }
+  .cast {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px dashed black;
+  }
+  .cast .cardset {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 250px;
+  }
+  .cast .cardset .phpro {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    padding-top: 20px;
+    border-top: none;
+    background: #abdcf1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .about h1,
+  .about h4 {
+    text-align: center;
+    -webkit-text-fill-color: #ffd700;
+    -webkit-text-stroke: 1px #000000;
+  }
+  .about .tab-select {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .about .tab-select .tab {
+    width: 220px;
+    border: 5px solid black;
+    border-radius: 10%;
+    background: #ffd700;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    text-decoration: none;
+    font-size: 3rem;
+    color: #000000;
+  }
+  .about .tab-select .tab:hover {
+    color: #abcdf1;
+    background: #ffffff;
+    border: 5px solid #000000;
+  }
+  .cast {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px dashed black;
+  }
+  .cast .cardset {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+  }
+  .cast .cardset .phpro {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+  }
 }
 footer {
   border-top: 2px dashed black;
